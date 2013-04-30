@@ -9,6 +9,6 @@ public class AnalyzeDataServlet extends HttpServlet {
 			throws IOException {
 		resp.setContentType("text/plain");
 		resp.getWriter().println("Hello, world");
-		//check
+		//check povi!
 	}
 }
