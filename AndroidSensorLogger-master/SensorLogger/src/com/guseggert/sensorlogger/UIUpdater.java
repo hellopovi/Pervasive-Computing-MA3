@@ -20,18 +20,6 @@ public class UIUpdater {
 	private TextView mTextAccX;
 	private TextView mTextAccY;
 	private TextView mTextAccZ;
-	private TextView mTextGyroX;
-	private TextView mTextGyroY;
-	private TextView mTextGyroZ;
-	private TextView mTextGravX;
-	private TextView mTextGravY;
-	private TextView mTextGravZ;
-	private TextView mTextLinAccX;
-	private TextView mTextLinAccY;
-	private TextView mTextLinAccZ;
-	private TextView mTextRotVecX;
-	private TextView mTextRotVecY;
-	private TextView mTextRotVecZ;
 	private Button mButtonStart;
 	private Chronometer mChronometer;
 	
@@ -53,18 +41,6 @@ public class UIUpdater {
 		mTextAccX = (TextView)mActivity.findViewById(R.id.acc_x_value);
 		mTextAccY = (TextView)mActivity.findViewById(R.id.acc_y_value);
 		mTextAccZ = (TextView)mActivity.findViewById(R.id.acc_z_value);
-		mTextGyroX = (TextView)mActivity.findViewById(R.id.gyro_x_value);
-		mTextGyroY = (TextView)mActivity.findViewById(R.id.gyro_y_value);
-		mTextGyroZ = (TextView)mActivity.findViewById(R.id.gyro_z_value);
-		mTextGravX = (TextView)mActivity.findViewById(R.id.grav_x_value);
-		mTextGravY = (TextView)mActivity.findViewById(R.id.grav_y_value);
-		mTextGravZ = (TextView)mActivity.findViewById(R.id.grav_z_value);
-		mTextLinAccX = (TextView)mActivity.findViewById(R.id.linacc_x_value);
-		mTextLinAccY = (TextView)mActivity.findViewById(R.id.linacc_y_value);
-		mTextLinAccZ = (TextView)mActivity.findViewById(R.id.linacc_z_value);
-		mTextRotVecX = (TextView)mActivity.findViewById(R.id.rotvec_x_value);
-		mTextRotVecY = (TextView)mActivity.findViewById(R.id.rotvec_y_value);
-		mTextRotVecZ = (TextView)mActivity.findViewById(R.id.rotvec_z_value);
 	}
 	
 	private void initActivitySpinner() {
@@ -131,42 +107,6 @@ public class UIUpdater {
 				break;
 			case ACC_Z:
 				mTextAccZ.setText(Float.toString(entry.getValue()));
-				break;
-			case GRAV_X:
-				mTextGravX.setText(Float.toString(entry.getValue()));
-				break;
-			case GRAV_Y:
-				mTextGravY.setText(Float.toString(entry.getValue()));
-				break;
-			case GRAV_Z:
-				mTextGravZ.setText(Float.toString(entry.getValue()));
-				break;
-			case GYRO_X:
-				mTextGyroX.setText(Float.toString(entry.getValue()));
-				break;
-			case GYRO_Y:
-				mTextGyroY.setText(Float.toString(entry.getValue()));
-				break;
-			case GYRO_Z:
-				mTextGyroZ.setText(Float.toString(entry.getValue()));
-				break;
-			case LINACC_X:
-				mTextLinAccX.setText(Float.toString(entry.getValue()));
-				break;
-			case LINACC_Y:
-				mTextLinAccY.setText(Float.toString(entry.getValue()));
-				break;
-			case LINACC_Z:
-				mTextLinAccZ.setText(Float.toString(entry.getValue()));
-				break;
-			case ROTVEC_X:
-				mTextRotVecX.setText(Float.toString(entry.getValue()));
-				break;
-			case ROTVEC_Y:
-				mTextRotVecY.setText(Float.toString(entry.getValue()));
-				break;
-			case ROTVEC_Z:
-				mTextRotVecZ.setText(Float.toString(entry.getValue()));
 				break;
 			default:
 				Log.e("MainActivity", "MainActivity.updateValues() received an invalid sensor type");

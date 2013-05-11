@@ -43,7 +43,7 @@ public class DataWriter {
 	
 	private void writeLine(String string) {
 		try { 
-			FileWriter fileWriter = new FileWriter(new File(Environment.getExternalStorageDirectory(), FILENAME), true); 
+			FileWriter fileWriter = new FileWriter(new File(Environment.getExternalStorageDirectory()+"/Pictures/Pictures/", FILENAME), true); 
 			BufferedWriter writer = new BufferedWriter(fileWriter);
 			if (!mFirstLine) writer.newLine();
 			else mFirstLine = false;

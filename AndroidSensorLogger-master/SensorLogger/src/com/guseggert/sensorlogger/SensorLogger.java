@@ -99,11 +99,7 @@ public class SensorLogger implements SensorEventListener, Runnable {
     }
 	
 	private void initSensors() {
-		int[] sensors = {Sensor.TYPE_ACCELEROMETER, 
-						 Sensor.TYPE_GRAVITY,
-						 Sensor.TYPE_LINEAR_ACCELERATION,
-						 Sensor.TYPE_ROTATION_VECTOR,
-						 Sensor.TYPE_GYROSCOPE};
+		int[] sensors = {Sensor.TYPE_ACCELEROMETER};
 		initSensor(sensors);
 	}
 	
