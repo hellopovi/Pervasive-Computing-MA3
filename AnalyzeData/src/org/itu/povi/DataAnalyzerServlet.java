@@ -13,13 +13,15 @@ public class DataAnalyzerServlet extends HttpServlet {
 
 	public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 		resp.setContentType("text/plain");
-		resp.getWriter().println("Hello, browser");
+		resp.getWriter().println(req.toString());
+		
 		log.info("hello browser");
 	}
 
 	public void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 		resp.setContentType("text/plain");
-		resp.getWriter().println("Hello, Povilas");
+		resp.getWriter().println(req.toString());
+		log.info(req.toString());
 		log.info("hello");
 	}
 }
